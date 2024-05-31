@@ -7,7 +7,7 @@ module fe_program_counter(
      
 );
 
-    always_ff @(posedge clk or negedge rst) begin
+    always_ff @(posedge clk) begin
         if (rst) begin
             fe_pc_out <= 32'b0; 
         end else begin
